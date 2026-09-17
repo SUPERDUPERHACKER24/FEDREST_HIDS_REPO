@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the article."
+title: "FedREST-HIDS: split-federated intrusion detection for resource-heterogeneous IIoT"
+version: 1.0.0
+doi: 10.5281/zenodo.22804616
+license: MIT
+repository-code: "https://github.com/SUPERDUPERHACKER24/FEDREST_HIDS_REPO"
+authors:
+  - family-names: Vyas
+    given-names: Abhishek
+    orcid: "https://orcid.org/0000-0002-5697-6729"
+    affiliation: "National Chung Cheng University"
+  - family-names: Hwang
+    given-names: Ren-Hung
+    orcid: "https://orcid.org/0000-0001-7996-4184"
+    affiliation: "National Yang Ming Chiao Tung University"
+  - family-names: Lin
+    given-names: Po-Ching
+    orcid: "https://orcid.org/0000-0001-8294-5857"
+    affiliation: "National Chung Cheng University"
+preferred-citation:
+  type: article
+  title: "FedREST-HIDS: Split-Federated Intrusion Detection for Resource-Heterogeneous Industrial IoT"
+  authors:
+    - family-names: Vyas
+      given-names: Abhishek
+    - family-names: Hwang
+      given-names: Ren-Hung
+    - family-names: Lin
+      given-names: Po-Ching
+  journal: "Computer Communications"
+  year: 2026
+  notes: "Under review"

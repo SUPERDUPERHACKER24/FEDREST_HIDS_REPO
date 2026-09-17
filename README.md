@@ -1,5 +1,7 @@
 # FedREST-HIDS
 
+[![DOI](https://zenodo.org/badge/1373028984.svg)](https://doi.org/10.5281/zenodo.22804616)
+
 Code accompanying **"FedREST-HIDS: Split-Federated Intrusion Detection for
 Resource-Heterogeneous Industrial IoT"** (Vyas, Hwang & Lin), submitted to
 *Computer Communications*.
@@ -128,7 +130,23 @@ Stated plainly, so nobody is misled:
 
 ## Citing
 
-See `CITATION.cff`. Please cite both the software and the article.
+Please cite both the software and the article.
+
+```bibtex
+@software{fedresthids_code,
+  author    = {Vyas, Abhishek and Hwang, Ren-Hung and Lin, Po-Ching},
+  title     = {{FedREST-HIDS}: split-federated intrusion detection for
+               resource-heterogeneous {IIoT}},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.22804616},
+  url       = {https://doi.org/10.5281/zenodo.22804616}
+}
+```
+
+`10.5281/zenodo.22804616` is the concept DOI and always resolves to the newest
+release. Cite it rather than a version DOI unless you need to pin a specific
+release. See also `CITATION.cff`.
 
 ## Licence
 

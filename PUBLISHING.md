@@ -189,3 +189,41 @@ at least one notebook still runs after the path changes described in
 **Do not commit the datasets.** `.gitignore` excludes `data/`, `*.csv` and
 `*.pcap`. WUSTL-IIoT-2021, ToN-IoT and SCVIC-APT-2021 carry their own
 licences and must be obtained from their original sources.
+
+---
+
+## Metadata for future releases
+
+`.zenodo.json` in the repository root controls how Zenodo records each release:
+authors with ORCIDs, title, description, keywords and licence. Zenodo reads it
+at release time, so once it is committed no Zenodo record ever needs editing by
+hand again.
+
+Note that `CITATION.cff` does **not** drive Zenodo — it powers GitHub's "Cite
+this repository" button. Both files are present and both should be kept in step
+with each other.
+
+If a release was archived before `.zenodo.json` existed, its record keeps the
+auto-generated metadata (GitHub account name as the author, the repository slug
+as the title). Fix that record by hand once: zenodo.org → the upload → **Edit**
+→ correct the authors, title, version and description → **Publish**. Editing
+metadata does not change the DOI.
+
+### Concept DOI versus version DOI
+
+Zenodo mints two DOIs:
+
+| | Resolves to |
+|---|---|
+| concept DOI (lower number) | always the newest release |
+| version DOI (higher number) | one specific release, forever |
+
+**Cite the concept DOI in the article.** A corrected release published after
+peer review will then be reachable through the link already printed in the
+paper, with no erratum required.
+
+For this repository: `10.5281/zenodo.22804616` is the concept DOI and
+`10.5281/zenodo.22804617` is the version DOI of the first release. The concept
+DOI is the one used in the manuscript. It can be confirmed on any version's
+record page, where the Software Heritage archive line shows
+`origin=https://doi.org/10.5281/zenodo.22804616`.
