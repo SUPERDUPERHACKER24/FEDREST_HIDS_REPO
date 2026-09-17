@@ -1,0 +1,52 @@
+{
+  "title": "FedREST-HIDS: split-federated intrusion detection for resource-heterogeneous Industrial IoT",
+  "description": "<p>Reference implementation and experimental notebooks accompanying the article <em>\"FedREST-HIDS: Split-Federated Intrusion Detection for Resource-Heterogeneous Industrial IoT\"</em> (Vyas, Hwang &amp; Lin), submitted to <em>Computer Communications</em>.</p><p>FedREST-HIDS partitions intrusion detection across three tiers. Resource-rich devices train complete local models and take part in federated learning. Resource-constrained devices execute only the initial feature-extraction layer and transmit clipped, noised activations to an edge server that runs the remaining layers. Federated transfer learning then aligns the edge models globally, and a trust-aware aggregation rule (FedTrust) bounds the influence of any single client. Privacy is enforced locally under R\u00e9nyi differential privacy.</p><p><strong>Contents</strong></p><ul><li><code>src/fedrest/</code> \u2014 reference implementation: R\u00e9nyi DP accounting, FedTrust aggregation, split models, communication cost model, training loops</li><li><code>notebooks/</code> \u2014 the notebooks that produced the reported results, preserved as run, with a manifest mapping each to the tables and figures it supports</li><li><code>scripts/verify_against_paper.py</code> \u2014 24 assertions checking the implementation against every privacy and communication figure printed in the article; runs in a second with no dataset and no GPU</li><li><code>scripts/audit_configs.py</code> \u2014 prints each notebook's declared privacy configuration beside the article's reported settings</li><li><code>scripts/make_figure2.py</code> \u2014 regenerates Figure 2 from the verification run's per-round log</li><li><code>results/</code> \u2014 output of the WUSTL-IIoT-2021 verification run</li><li><code>docs/KNOWN_ISSUES.md</code> \u2014 documents, in public, where the code and the article agree and where they diverge</li></ul><p><strong>Datasets are not redistributed.</strong> WUSTL-IIoT-2021, ToN-IoT and SCVIC-APT-2021 must be obtained from their original sources; see the README.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "version": "v1.0.0",
+  "language": "eng",
+
+  "creators": [
+    {
+      "name": "Vyas, Abhishek",
+      "affiliation": "Department of Computer Science and Information Engineering, National Chung Cheng University, Chiayi County, Taiwan",
+      "orcid": "0000-0002-5697-6729"
+    },
+    {
+      "name": "Hwang, Ren-Hung",
+      "affiliation": "College of Artificial Intelligence, National Yang Ming Chiao Tung University, Tainan, Taiwan",
+      "orcid": "0000-0001-7996-4184"
+    },
+    {
+      "name": "Lin, Po-Ching",
+      "affiliation": "Department of Computer Science and Information Engineering, National Chung Cheng University, Chiayi County, Taiwan",
+      "orcid": "0000-0001-8294-5857"
+    }
+  ],
+
+  "keywords": [
+    "split learning",
+    "federated learning",
+    "federated transfer learning",
+    "Renyi differential privacy",
+    "differential privacy",
+    "edge computing",
+    "Industrial Internet of Things",
+    "IIoT",
+    "host-based intrusion detection",
+    "intrusion detection system",
+    "privacy-preserving machine learning"
+  ],
+
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/SUPERDUPERHACKER24/FEDREST_HIDS_REPO",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+
+  "notes": "Datasets are not redistributed and must be obtained from their original sources. Known divergences between this code and the article are documented in docs/KNOWN_ISSUES.md."
+}
